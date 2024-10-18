@@ -2,7 +2,7 @@
 
 This is a shopping application built using the React.js and Tailwind with features like product listing, cart management, user authentication, payment integration, and more.
 
-You can check out the live application here: [Live Demo](https://manish-shoping-fsuyikcbo-manishmandrais-projects.vercel.app/)
+You can check out the live application here: [Live Demo](https://manish-shoping-app-git-main-manishmandrais-projects.vercel.app/)
 
 ## Table of Contents
 
