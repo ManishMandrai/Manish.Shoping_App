@@ -1,6 +1,6 @@
 # Shopping Application
 
-This is a full-stack shopping application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) with features like product listing, cart management, user authentication, payment integration, and more.
+This is a shopping application built using the React.js and Tailwind with features like product listing, cart management, user authentication, payment integration, and more.
 
 You can check out the live application here: [Live Demo](https://manish-shoping-fsuyikcbo-manishmandrais-projects.vercel.app/)
 
