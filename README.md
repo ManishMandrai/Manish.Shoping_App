@@ -40,10 +40,11 @@ To run this project locally, follow these steps:
    git clone https://github.com/yourusername/shopping-app.git
    cd shopping-app
 # Install frontend dependencies
-cd client
 npm install
 
-# Install backend dependencies
-cd ../server
-npm install
+# Start the frontend server
+npm run dev 
+
+
+
 
