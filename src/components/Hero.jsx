@@ -18,9 +18,11 @@ const Hero = () => {
               Explore the latest trends and timeless designs.
             </p>
             <div className="flex items-center gap-4 mt-4">
+              <Link to='/latestCollection'>
               <button className="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition-colors duration-300">
                 Shop Now
               </button>
+              </Link>
               <p className="w-8 md:w-10 h-[2px] bg-[#333333]"></p>
             </div>
           </div>
