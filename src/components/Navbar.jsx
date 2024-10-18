@@ -5,23 +5,29 @@ import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
-
   const { setShowSearch, getCartCount } = useContext(ShopContext);
 
   return (
     <div className="bg-white px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] border-b-2 border-gray-200 shadow-md">
       <div className="flex items-center justify-between py-5 font-semibold text-gray-800">
         <Link to="/">
-          <img src={assets.logo} className="w-36 transition-transform duration-300 hover:scale-105" alt="Logo" />
+          <img
+            src={assets.logo}
+            className="w-36 transition-transform duration-300 hover:scale-105"
+            alt="Logo"
+          />
         </Link>
 
+        {/* Desktop Navigation Links */}
         <ul className="hidden sm:flex gap-8 text-lg">
           <NavLink
             to="/"
             className="flex flex-col items-center gap-1 group"
             activeClassName="text-black"
           >
-            <p className="group-hover:text-black transition-colors duration-300">Home</p>
+            <p className="group-hover:text-black transition-colors duration-300">
+              Home
+            </p>
             <hr className="w-2/4 border-none h-[2px] bg-gray-600 group-hover:bg-black hidden group-hover:block" />
           </NavLink>
           <NavLink
@@ -29,7 +35,9 @@ const Navbar = () => {
             className="flex flex-col items-center gap-1 group"
             activeClassName="text-black"
           >
-            <p className="group-hover:text-black transition-colors duration-300">Collection</p>
+            <p className="group-hover:text-black transition-colors duration-300">
+              Collection
+            </p>
             <hr className="w-2/4 border-none h-[2px] bg-gray-600 group-hover:bg-black hidden group-hover:block" />
           </NavLink>
           <NavLink
@@ -37,7 +45,9 @@ const Navbar = () => {
             className="flex flex-col items-center gap-1 group"
             activeClassName="text-black"
           >
-            <p className="group-hover:text-black transition-colors duration-300">About</p>
+            <p className="group-hover:text-black transition-colors duration-300">
+              About
+            </p>
             <hr className="w-2/4 border-none h-[2px] bg-gray-600 group-hover:bg-black hidden group-hover:block" />
           </NavLink>
           <NavLink
@@ -45,46 +55,67 @@ const Navbar = () => {
             className="flex flex-col items-center gap-1 group"
             activeClassName="text-black"
           >
-            <p className="group-hover:text-black transition-colors duration-300">Contact</p>
+            <p className="group-hover:text-black transition-colors duration-300">
+              Contact
+            </p>
             <hr className="w-2/4 border-none h-[2px] bg-gray-600 group-hover:bg-black hidden group-hover:block" />
           </NavLink>
         </ul>
 
+        {/* Icons Section */}
         <div className="flex items-center gap-6">
+          {/* Search Icon: Click to show the SearchBar */}
           <img
             onClick={() => setShowSearch(true)}
             src={assets.search_icon}
-            className="w-5 cursor-pointer hover:opacity-80 transition-opacity duration-300"
+            className="w-6 cursor-pointer hover:opacity-80 transition-opacity duration-300"
             alt="Search"
           />
 
+          {/* Profile Icon */}
           <div className="relative group">
             <Link to="/login">
-              <img src={assets.profile_icon} alt="Profile" className="w-5 cursor-pointer hover:opacity-80 transition-opacity duration-300" />
+              <img
+                src={assets.profile_icon}
+                alt="Profile"
+                className="w-5 cursor-pointer hover:opacity-80 transition-opacity duration-300"
+              />
             </Link>
             <div className="absolute right-0 hidden group-hover:block bg-white border border-gray-200 shadow-lg mt-2 w-36 py-3 px-5 rounded-md">
-              <p className="cursor-pointer hover:text-black transition-colors duration-300">My Profile</p>
-              <p className="cursor-pointer hover:text-black transition-colors duration-300">Orders</p>
-              <p className="cursor-pointer hover:text-black transition-colors duration-300">Logout</p>
+              <p className="cursor-pointer hover:text-black transition-colors duration-300">
+                My Profile
+              </p>
+              <p className="cursor-pointer hover:text-black transition-colors duration-300">
+                Orders
+              </p>
+              <p className="cursor-pointer hover:text-black transition-colors duration-300">
+                Logout
+              </p>
             </div>
           </div>
 
+          {/* Cart Icon with Item Count */}
           <Link to="/cart" className="relative">
-            <img src={assets.cart_icon} className="w-5 cursor-pointer hover:opacity-80 transition-opacity duration-300" alt="Cart" />
+            <img
+              src={assets.cart_icon}
+              className="w-5 cursor-pointer hover:opacity-80 transition-opacity duration-300"
+              alt="Cart"
+            />
             <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center bg-red-600 text-white rounded-full text-xs">
               {getCartCount()}
             </p>
           </Link>
 
+          {/* Mobile Menu Icon */}
           <img
             onClick={() => setVisible(true)}
             src={assets.menu_icon}
-            className="w-5 cursor-pointer hover:opacity-80 transition-opacity duration-300 sm:hidden"
+            className="w-6 cursor-pointer hover:opacity-80 transition-opacity duration-300 sm:hidden"
             alt="Menu"
           />
         </div>
 
-        {/* Sidebar Menu for small screens */}
+        {/* Sidebar for Mobile Navigation */}
         <div
           className={`fixed top-0 right-0 bottom-0 bg-white transition-all z-50 shadow-lg ${
             visible ? "w-full" : "w-0"
