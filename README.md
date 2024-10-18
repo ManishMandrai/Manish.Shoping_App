@@ -25,10 +25,6 @@ You can check out the live application here: [Live Demo](https://manish-shoping-
 ## Tech Stack
 
 - **Frontend**: React.js, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-- **Payment Integration**: Stripe / Razorpay (if applicable)
 - **Deployment**: Vercel
 
 ## Installation
@@ -36,9 +32,8 @@ You can check out the live application here: [Live Demo](https://manish-shoping-
 To run this project locally, follow these steps:
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/shopping-app.git
-   cd shopping-app
+git clone
+
 # Install frontend dependencies
 npm install
 
