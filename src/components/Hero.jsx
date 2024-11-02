@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="pt-8">
-      <div className="flex flex-col sm:flex-row border border-gray-300 shadow-lg rounded-lg overflow-hidden">
+      <div className="flex flex-col sm:flex-row border mt-20 border-gray-300 shadow-lg rounded-lg overflow-hidden">
         {/* Left side */}
         <div className="w-full sm:w-1/2 flex items-center justify-center py-12 sm:py-0 bg-gray-50">
           <div className="text-[#333333] px-8 sm:px-12">

@@ -5,7 +5,7 @@ import NewsletterBox from "../components/NewsletterBox";
 
 const About = () => {
   return (
-    <div className="container mx-auto px-4 md:px-20">
+    <div className="container mx-auto mt-20 px-4 md:px-20">
       {/* About Section */}
       <div className="text-3xl text-center pt-8 border-t">
         <Title text1="About" text2="Us" />
