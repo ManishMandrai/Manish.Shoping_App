@@ -1,45 +1,57 @@
-# Shopping Application
+# Title
 
-This is a shopping application built using the React.js and Tailwind with features like product listing, cart management, user authentication, payment integration, and more.
+Full stack Ecommerce App 
 
-You can check out the live application here: [Live Demo](https://manish-shoping-app-git-main-manishmandrais-projects.vercel.app/)
 
-## Table of Contents
-
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [License](#license)
 
 ## Features
-
-- **User Authentication**: Sign up and log in functionality with JWT-based authentication.
-- **Product Management**: Browse and search through various products with filtering options.
-- **Cart Management**: Add, remove, and update products in the cart.
-- **Checkout**: Proceed to order with multiple payment methods, including Cash on Delivery (COD) and online payments.
-- **Responsive Design**: Fully optimized for all screen sizes, from mobile to desktop.
-
+-   **User Authentication :** Secure login and registration system.
+-   **Product Listings :** Display products with images, prices, and descriptions.
+-   **Search & Filtering :** Advanced search and filter options for easy product discovery.
+-   **Product Details :** Detailed product pages with specifications and reviews.
+-   **Shopping Cart :** Add, update, or remove items from the cart.
+-   **Order Management :** Easy checkout process and order tracking.
+-   **Payment Integration :** Multiple payment options for secure transactions.
+-   **Responsive Design :** Mobile-friendly layout for a seamless experience on all devices.
+-   **Email Notifications :** Order confirmation and shipping updates.
+-   **Review & Ratings :** Customers can review and rate products.
+-   **Push Notifications :** Alerts for sales, discounts, and order updates.
+-   **Analytics :** Dashboard with sales and user engagement metrics
 ## Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS
-- **Deployment**: Vercel
+**Client:** 
+-   React,
+-   Redux, 
+-   TailwindCSS, 
+-   CSS, 
+-   HTML 
 
-## Installation
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-git clone
-
-# Install frontend dependencies
-npm install
-
-# Start the frontend server
-npm run dev 
+**Server:** 
+-   Node, 
+-   Express, 
+-   MongoDB
 
 
+## Deployment
 
+To deploy this project run
+
+```bash
+   git clone https://github.com/ManishMandrai/Manish.Shoping_App.git
+```
+
+```bash
+    npm install
+````
+
+```bash
+    npm run dev 
+```
+## Demo
+
+https://manish-shoping-app.vercel.app/
+
+## Authors
+
+- [@ManishKumar](https://github.com/ManishMandrai)
 
