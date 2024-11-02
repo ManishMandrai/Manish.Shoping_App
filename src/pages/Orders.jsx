@@ -8,7 +8,7 @@ const Orders = () => {
   const date = new Date();
 
   return (
-    <div className='border-t pt-16'>
+    <div className='mt-20 border-t pt-16'>
 
       <div className='text-2xl'>
         <Title text1={'My'} text2={'Orders'}/>

@@ -9,7 +9,7 @@ const PlaceOrder = () => {
   const { navigate } = useContext(ShopContext);
 
   return (
-    <div className="flex flex-col sm:flex-row justify-between gap-6 pt-5 sm:pt-14 min-h-[80vh] bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+    <div className="flex flex-col sm:flex-row justify-between gap-6 pt-5 sm:pt-14 min-h-[80vh] bg-gray-50 p-6 rounded-lg shadow-lg mt-20 border border-gray-200">
       <div className="flex flex-col gap-6 w-full sm:max-w-md">
         <div className="text-xl sm:text-2xl text-gray-800 my-3">
           <Title text1={'Delivery'} text2={'Information'} />
@@ -86,7 +86,7 @@ const PlaceOrder = () => {
             >
               <p className={`min-w-3 h-3.5 border rounded-full ${method === 'stripe' ? 'bg-blue-500' : ''}`}></p>
               <img className="h-5 mx-4" src={assets.stripe_logo} alt="Stripe Logo" />
-              <p className="text-gray-600">Stripe</p>
+              <p className="text-gray-600">Credit-Card</p>
             </div>
             <div
               onClick={() => setMethod('razorpay')}
@@ -94,7 +94,7 @@ const PlaceOrder = () => {
             >
               <p className={`min-w-3 h-3.5 border rounded-full ${method === 'razorpay' ? 'bg-blue-500' : ''}`}></p>
               <img className="h-5 mx-4" src={assets.razorpay_logo} alt="Razorpay Logo" />
-              <p className="text-gray-600">Razorpay</p>
+              <p className="text-gray-600">Paytm</p>
             </div>
             <div
               onClick={() => setMethod('cod')}

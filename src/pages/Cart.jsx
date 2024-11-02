@@ -28,7 +28,7 @@ const Cart = () => {
   },[cartItems])
 
   return (
-    <div className='border-t pt-14'>
+    <div className='border-t mt-20 pt-14'>
       <div className='text-2xl mb-3'>
         <Title text1={'Your'} text2={'Cart'}/>
       </div>
